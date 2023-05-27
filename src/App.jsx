@@ -1,6 +1,7 @@
 
 import GlobalStyle from "./Global_Style/Global_Style.jsx"
 import Header from "./Components/Header/Header.jsx"
+import Main from "./Components/Main/Main.jsx"
 
 export default function App() {
   return (
@@ -8,8 +9,7 @@ export default function App() {
     <>
       <GlobalStyle />
       <Header />
+      <Main />
     </>
   )
 }
-
-/* parei tentando botar a lupa de imagem no botão do header */
