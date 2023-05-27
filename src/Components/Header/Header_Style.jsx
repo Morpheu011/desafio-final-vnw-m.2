@@ -10,6 +10,7 @@ justify-content: space-between;
 height: 3.875rem;
 width: 100%;
 position: fixed;
+z-index: 1;
 #Logo{
     margin-left: 1rem;
 }`

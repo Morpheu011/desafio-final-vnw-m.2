@@ -1,14 +1,8 @@
 import * as S from "./Main_Style"
 import Lupa from "../../images/Icon_Lupa.svg"
-/* import left from "../../images/left.svg"
-import right from "../../images/right.svg" */
-import Carousel from 'react-elastic-carousel'
-import Card from "../Cards/Cards.jsx"
-import Zelda from "../../images/Zelda.png"
-import Moonlight from "../../images/Moonlight.jpeg"
-import Mario from "../../images/Mario.jpg"
-import Duna from "../../images/Duna.png"
-import Batman from "../../images/Batman.png"
+import Carousel from "./Carousel/Carousel.jsx"
+import SectionMovies from "./Section/Section"
+import PagesCount from "./Pages/pages"
 
 export default function Main() {
     return (
@@ -27,13 +21,10 @@ export default function Main() {
                 </S.Ul>
             </nav>
             <S.H2>Últimos lançamentos</S.H2>
-            <Carousel itemsToShow={5} pagination={false}>
-                <Card src={Zelda} title={"A Lenda de Zelda"} date={2024} />
-                <Card src={Moonlight} title={"Moonlight"} date={2022} />
-                <Card src={Mario} title={"Super Mario Bros"} date={2023} />
-                <Card src={Duna} title={"Duna"} date={2021} />
-                <Card src={Batman} title={"Homem Morcego"} date={2022} />
-            </Carousel>
+            <Carousel />
+            <S.H2>Em Alta</S.H2>
+            <SectionMovies/>
+            <PagesCount />
         </S.Main>
     )
 }
